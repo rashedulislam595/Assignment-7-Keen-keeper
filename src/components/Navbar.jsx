@@ -19,8 +19,8 @@ const Navbar = () => {
                 <div className="flex-none">
                     <ul className="flex gap-3 md:gap-5 px-1 text-[#64748B] font-medium items-center">
                         <li ><Link href='/' className={`flex gap-0.5 items-center ${pathName === "/"?"bg-[#244D3F]  text-[#FFFFFF] py-2.5 px-4 rounded-md":""}`}><House className='w-5' />Home</Link></li>
-                        <li><Link href='/h' className={`flex gap-0.5 items-center ${pathName === "/h"?"bg-[#244D3F] text-[#FFFFFF] py-2.5 px-4 rounded-md":""}`}><History className='w-5' />Timeline</Link></li>
-                        <li><Link href='/l' className={`flex gap-0.5 items-center ${pathName === "/l"?"bg-[#244D3F] text-[#FFFFFF] py-2.5 px-4 rounded-md":""}`}><ChartLine className='w-5' />Stats</Link></li>
+                        <li><Link href='/timeline' className={`flex gap-0.5 items-center ${pathName === "/timeline"?"bg-[#244D3F] text-[#FFFFFF] py-2.5 px-4 rounded-md":""}`}><History className='w-5' />Timeline</Link></li>
+                        <li><Link href='/stats' className={`flex gap-0.5 items-center ${pathName === "/stats"?"bg-[#244D3F] text-[#FFFFFF] py-2.5 px-4 rounded-md":""}`}><ChartLine className='w-5' />Stats</Link></li>
                     </ul>
                 </div>
             </div>
