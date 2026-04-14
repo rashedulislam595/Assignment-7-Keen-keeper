@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 const FriendCard = ({friend}) => {
@@ -15,7 +16,7 @@ const FriendCard = ({friend}) => {
     const style = statusStyles[friend.status]
 
     return (
-        <div className='p-6 text-center  shadow-md  rounded-lg'>
+        <Link href={`/friend-details/${friend.id}`} className='p-6 text-center  shadow-md  rounded-lg'>
             <div className='mb-3'>
                 <Image src={friend.picture} alt={friend.name} width={100} height={100} className='rounded-full mx-auto'/>
             </div>
@@ -28,7 +29,7 @@ const FriendCard = ({friend}) => {
                 <button className={`text-sm font-medium text-[#FFFFFF]  py-1.5 px-3.5 rounded-full ${style}`}>{friend.status}</button>
             </div>
             
-        </div>
+        </Link>
     );
 };
 
