@@ -23,7 +23,6 @@ const FriendDetailsPage = async ({ params }) => {
     const tag = friend.tags.map((tag, ind) =>
         <button key={ind} className='text-[#244D3F] font-medium text-sm bg-[#CBFADB] py-1.5 px-3 my-2 rounded-full mr-2'>{tag}</button>
     )
-    console.log(friend)
 
 
     return (

@@ -9,7 +9,6 @@ import videoImage from '../../assets/video.png'
 const TimelinePage = () => {
     const { contactStatus } = useContext(FriendContext)
 
-    console.log(contactStatus)
 
     return (
         <div className='bg-[#F8FAFC]'>

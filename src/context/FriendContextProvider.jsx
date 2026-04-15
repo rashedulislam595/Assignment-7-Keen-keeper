@@ -34,14 +34,13 @@ const FriendContextProvider = ({children}) => {
         const {name} = friend
         const today = new Date().toDateString()
         const currentDate = today.slice(4)
-        // console.log(currentDate)
+        
         
         const contact = {name,currentDate,status:"Video"}
         
         setContactStatus([...contactStatus,contact])
         toast.success(`Video with ${name}`,{theme: "dark",position: "top-center",})
     }
-    console.log(contactStatus)
     
     const data = {
         handleCallBtn,
