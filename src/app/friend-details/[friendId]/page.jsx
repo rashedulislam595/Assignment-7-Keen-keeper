@@ -1,5 +1,5 @@
+import CheckInThreeBtn from '@/quick-check-in-btn/CheckInThreeBtn';
 
-import { MessageSquareMore, PhoneCall, Video } from 'lucide-react';
 import Image from 'next/image';
 import React from 'react';
 import { PiArchiveBold } from 'react-icons/pi';
@@ -23,6 +23,7 @@ const FriendDetailsPage = async ({ params }) => {
     const tag = friend.tags.map((tag, ind) =>
         <button key={ind} className='text-[#244D3F] font-medium text-sm bg-[#CBFADB] py-1.5 px-3 my-2 rounded-full mr-2'>{tag}</button>
     )
+    console.log(friend)
 
 
     return (
@@ -80,16 +81,8 @@ const FriendDetailsPage = async ({ params }) => {
                 <div className='p-6 shadow-sm'>
                     <h2 className='text-xl font-medium text-[#244D3F]'>Quick Check-In</h2>
 
-                    <div className='grid grid-cols-3 gap-6 md:gap-4 w-full mt-4'>
-                        <button className="btn h-fit grid items-center justify-center rounded-lg p-4 space-y-1 w-full  text-lg">
-                            <PhoneCall size={30} />Call
-                        </button>
-                        <button className="btn h-fit grid items-center justify-center rounded-lg p-4 space-y-1 w-full  text-lg">
-                            <MessageSquareMore size={30} /> Text
-                        </button>
-                        <button className="w-full btn h-fit grid items-center justify-center rounded-lg p-4 space-y-1  text-lg ">
-                            <Video size={30} /> Video
-                        </button>
+                    <div >
+                        <CheckInThreeBtn friend={friend}/>
                         
                     </div>
                 </div>
