@@ -13,7 +13,7 @@ const CheckInThreeBtn = ({friend}) => {
     
 
     return (
-        <div className='grid grid-cols-3 gap-6 md:gap-4 w-full mt-4'>
+        <div className='grid grid-cols-3 gap-3 sm:gap-6 md:gap-4 w-full mt-4'>
             <button onClick={()=>handleCallBtn(friend)} className="btn h-fit grid items-center justify-center rounded-lg p-4 space-y-1 w-full  text-lg" >
                 <PhoneCall size={30} />Call
             </button>

@@ -1,5 +1,5 @@
 import { Plus } from 'lucide-react';
-import React from 'react';
+import React, { useContext } from 'react';
 
 const Banner = () => {
     return (
@@ -15,19 +15,19 @@ const Banner = () => {
             </div>
             {/* summary card */}
             <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6'>
-                <div className='p-8 shadow-sm text-center'>
-                    <h3 className='text-[#244D3F] font-semibold text-3xl'>10</h3>
+                <div className='p-8 shadow-sm text-center hover:border-gray-300 rounded-lg border hover:shadow-xl border-white'>
+                    <h3 className='text-[#244D3F] font-semibold text-3xl'>12</h3>
                     <p className='text-lg text-[#64748B]'>Total Friends</p>
                 </div>
-                <div className='p-8 shadow-sm text-center'>
+                <div className='p-8 shadow-sm text-center hover:border-gray-300 rounded-lg border hover:shadow-xl border-white'>
                     <h3 className='text-[#244D3F] font-semibold text-3xl'>3</h3>
                     <p className='text-lg text-[#64748B]'>On Track</p>
                 </div>
-                <div className='p-8 shadow-sm text-center'>
+                <div className='p-8 shadow-sm text-center hover:border-gray-300 rounded-lg border hover:shadow-xl border-white'>
                     <h3 className='text-[#244D3F] font-semibold text-3xl'>6</h3>
                     <p className='text-lg text-[#64748B]'>Need Attention</p>
                 </div>
-                <div className='p-8 shadow-sm text-center'>
+                <div className='p-8 shadow-sm text-center hover:border-gray-300 rounded-lg border hover:shadow-xl border-white'>
                     <h3 className='text-[#244D3F] font-semibold text-3xl'>12</h3>
                     <p className='text-lg text-[#64748B]'>Interactions This Month</p>
                 </div>

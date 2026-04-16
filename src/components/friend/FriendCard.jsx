@@ -1,6 +1,7 @@
+import { FriendContext } from '@/context/FriendContextProvider';
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import React, { useContext } from 'react';
 
 const FriendCard = ({friend}) => {
 
@@ -14,9 +15,8 @@ const FriendCard = ({friend}) => {
         "Overdue" : "bg-[#EF4444]"
     }
     const style = statusStyles[friend.status]
-
     return (
-        <Link href={`/friend-details/${friend.id}`} className='p-6 text-center  shadow-md  rounded-lg'>
+        <Link href={`/friend-details/${friend.id}`} className='p-6 text-center border border-white  shadow-md  rounded-lg hover:border hover:border-gray-400  hover:shadow-xl '>
             <div className='mb-3'>
                 <Image src={friend.picture} alt={friend.name} width={100} height={100} className='rounded-full mx-auto'/>
             </div>

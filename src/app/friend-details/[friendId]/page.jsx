@@ -57,17 +57,17 @@ const FriendDetailsPage = async ({ params }) => {
             </div>
             {/* friend info right column */}
             <div className='space-y-6 mt-10 md:mt-0  '>
-                <div className='flex gap-6'>
-                    <div className='py-8 px-4 text-center shadow-sm'>
-                        <h2 className='text-[#244D3F] text-3xl font-semibold'>{friend.days_since_contact}</h2>
+                <div className='flex gap-4 sm:gap-6'>
+                    <div className='py-4 px-2 sm:py-8 sm:px-4 text-center shadow-sm'>
+                        <h2 className='text-[#244D3F] text-2xl sm:text-3xl font-semibold'>{friend.days_since_contact}</h2>
                         <p className='text-lg text-[#64748B]'>Days Since Contact</p>
                     </div>
-                    <div className='py-8 px-4 text-center shadow-sm'>
-                        <h2 className='text-[#244D3F] text-3xl font-semibold'>{friend.goal}</h2>
+                    <div className='py-4 px-2 sm:py-8 sm:px-4 text-center shadow-sm'>
+                        <h2 className='text-[#244D3F] text-2xl sm:text-3xl font-semibold'>{friend.goal}</h2>
                         <p className='text-lg text-[#64748B]'>Goal (Days)</p>
                     </div>
-                    <div className='py-8 px-4 text-center shadow-sm'>
-                        <h2 className='text-[#244D3F] text-3xl font-semibold'>{friend.next_due_date}</h2>
+                    <div className='py-4 px-2 sm:py-8 sm:px-4 text-center shadow-sm'>
+                        <h2 className='text-[#244D3F] text-2xl sm:text-3xl font-semibold'>{friend.next_due_date}</h2>
                         <p className='text-lg text-[#64748B]'>Next Due</p>
                     </div>
                 </div>

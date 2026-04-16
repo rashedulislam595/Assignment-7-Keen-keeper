@@ -16,7 +16,7 @@ const StatsPage = () => {
     ]
     return (
         <div className=' bg-[#F8FAFC] '>
-            <div className='w-9/12 mx-auto my-20'>
+            <div className='w-11/12  sm:w-9/12 mx-auto my-20'>
                 <h2 className='text-5xl font-bold text-[#1F2937] mb-6'>Friendship Analytics</h2>
                 {
                     contactStatus.length === 0 ?

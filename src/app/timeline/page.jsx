@@ -7,13 +7,24 @@ import massageImage from '../../assets/text.png'
 import videoImage from '../../assets/video.png'
 
 const TimelinePage = () => {
-    const { contactStatus } = useContext(FriendContext)
+    const { contactStatus, setSorting } = useContext(FriendContext)
+
+
 
 
     return (
         <div className='bg-[#F8FAFC]'>
             <div className='w-11/12 mx-auto my-20'>
                 <h2 className='text-5xl font-bold text-[#1F2937]'>Timeline </h2>
+
+                <select defaultValue="Filter timeline" className="select select-natural my-6">
+                    <option  disabled={true}>Filter timeline</option>
+                    <option onClick={() => setSorting("Call")}>Call</option>
+                    <option onClick={() => setSorting("Text")}>Text</option>
+                    <option onClick={() => setSorting("Video")}>Video</option>
+                </select>
+
+
 
                 <div>
                     {
@@ -23,7 +34,7 @@ const TimelinePage = () => {
                         </div> :
                             contactStatus.map((friend, ind) => <div key={ind} className='my-6 bg-white p-4 rounded-lg border border-[#E9E9E9] flex gap-4 items-center'>
                                 <div>
-                                    {friend.status === "Call" ? <Image  src={callImage} alt={`${friend.name} image`} width={40} height={40} /> : friend.status === "Text"?<Image src={massageImage} alt={`${friend.name} image`} width={40} height={40} />:friend.status === "Video"?<Image src={videoImage} alt={`${friend.name} image`} width={40} height={40} />:""}
+                                    {friend.status === "Call" ? <Image src={callImage} alt={`${friend.name} image`} width={40} height={40} /> : friend.status === "Text" ? <Image src={massageImage} alt={`${friend.name} image`} width={40} height={40} /> : friend.status === "Video" ? <Image src={videoImage} alt={`${friend.name} image`} width={40} height={40} /> : ""}
                                 </div>
                                 <div>
                                     <h2 className='text-[#244D3F] text-xl font-medium'>{friend.status} <span className='text-[#64748B] text-lg font-normal'>with {friend.name}</span></h2>
