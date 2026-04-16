@@ -25,6 +25,8 @@ const FriendDetailsPage = async ({ params }) => {
     )
 
 
+
+
     return (
         <div className='my-20 w-11/12 mx-auto inline md:flex gap-6 justify-center'>
             {/* friend info left column */}
@@ -81,8 +83,8 @@ const FriendDetailsPage = async ({ params }) => {
                     <h2 className='text-xl font-medium text-[#244D3F]'>Quick Check-In</h2>
 
                     <div >
-                        <CheckInThreeBtn friend={friend}/>
-                        
+                        <CheckInThreeBtn friend={friend} />
+
                     </div>
                 </div>
             </div>
