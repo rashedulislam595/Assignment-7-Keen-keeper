@@ -2,7 +2,6 @@
 
 **KeenKeeper** is a relationship management app that helps you stay close to the people who matter most in your life. It tracks how recently you've been in touch with friends and family, highlights who needs attention, and gives you a clear overview of your social health — so no important connection quietly slips away.
 
----
 
 ## 🛠️ Technologies Used
 
@@ -16,7 +15,6 @@
 | **Recharts** | Charts & data visualizations |
 | **Vercel** | Deployment & hosting |
 
----
 
 ## ✨ Key Features
 
@@ -29,7 +27,6 @@ Each friend card shows exactly how many days have passed since your last interac
 ### 3. 🗂️ Categorized Connections
 Organize friends by relationship type (Work, Family, Hobby, Travel, etc.) and navigate their full details via individual profile pages. A built-in **Timeline** and **Stats** view give you deeper insight into your connection patterns over time.
 
----
 
 ## 🌐 Live Demo
 
