@@ -1,9 +1,5 @@
 # 👥 KeenKeeper — Keep Your Friendships Alive
 
----
-
-## 📖 Description
-
 **KeenKeeper** is a relationship management app that helps you stay close to the people who matter most in your life. It tracks how recently you've been in touch with friends and family, highlights who needs attention, and gives you a clear overview of your social health — so no important connection quietly slips away.
 
 ---
