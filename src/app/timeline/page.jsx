@@ -6,6 +6,8 @@ import callImage from '../../assets/call.png'
 import massageImage from '../../assets/text.png'
 import videoImage from '../../assets/video.png'
 
+
+
 const TimelinePage = () => {
     const { contactStatus, setSorting } = useContext(FriendContext)
 

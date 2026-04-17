@@ -5,6 +5,11 @@ import React from 'react';
 import { PiArchiveBold } from 'react-icons/pi';
 import { RiDeleteBin5Line, RiNotificationSnoozeLine } from 'react-icons/ri';
 
+export const metadata = {
+  title: "Keen-Keeper | Friend-Details",
+  description: "View detailed information about your friends, including contact history, communication preferences, and interaction insights to help you stay connected and organized.",
+};
+
 const FriendDetailsPage = async ({ params }) => {
     const { friendId } = await params;
 
