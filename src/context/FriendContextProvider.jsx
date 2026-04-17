@@ -18,12 +18,14 @@ const FriendContextProvider = ({ children }) => {
     const [sorting, setSorting] = useState("");
 
     useEffect(() => {
-        if (sorting === "Call") {
+        if(sorting){
+            if (sorting === "Call") {
             setContactStatus([...callFriend]);
         } else if (sorting === "Text") {
             setContactStatus([...textFriend]);
         } else if (sorting === "Video") {
             setContactStatus([...videoFriend]);
+        }
         }
     }, [sorting]);
 

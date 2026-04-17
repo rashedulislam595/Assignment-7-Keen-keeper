@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 👥 KeenKeeper — Keep Your Friendships Alive
 
-## Getting Started
+---
 
-First, run the development server:
+## 📖 Description
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+**KeenKeeper** is a relationship management app that helps you stay close to the people who matter most in your life. It tracks how recently you've been in touch with friends and family, highlights who needs attention, and gives you a clear overview of your social health — so no important connection quietly slips away.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🛠️ Technologies Used
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Technology | Purpose |
+|---|---|
+| **Next.js** | React framework with App Router |
+| **React** | Component-based UI |
+| **Tailwind CSS** | Utility-first styling |
+| **DaisyUI** | Pre-built Tailwind component library |
+| **JavaScript (ES6+)** | Application logic |
+| **Recharts** | Charts & data visualizations |
+| **Vercel** | Deployment & hosting |
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## ✨ Key Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 1. 📊 Relationship Health Dashboard
+Get an at-a-glance summary of your social life — see total friends, how many connections are on track, and which ones need your attention this month. A live interaction counter keeps you motivated.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 2. ⏱️ Smart Contact Tracking
+Each friend card shows exactly how many days have passed since your last interaction, with a clear status badge — **On Track**, **Almost Due**, or **Overdue** — so you always know who to reach out to next.
 
-## Deploy on Vercel
+### 3. 🗂️ Categorized Connections
+Organize friends by relationship type (Work, Family, Hobby, Travel, etc.) and navigate their full details via individual profile pages. A built-in **Timeline** and **Stats** view give you deeper insight into your connection patterns over time.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🌐 Live Demo
+
+👉 [https://assignment-7-kin-keeper.vercel.app/](https://assignment-7-kin-keeper.vercel.app/)
+

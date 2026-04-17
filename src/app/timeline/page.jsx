@@ -9,9 +9,6 @@ import videoImage from '../../assets/video.png'
 const TimelinePage = () => {
     const { contactStatus, setSorting } = useContext(FriendContext)
 
-
-
-
     return (
         <div className='bg-[#F8FAFC]'>
             <div className='w-11/12 mx-auto my-20'>

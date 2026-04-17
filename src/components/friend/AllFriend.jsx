@@ -2,7 +2,7 @@ import React from 'react';
 import FriendCard from './FriendCard';
 
 const AllFriend = async() => {
-    const res = await fetch("http://localhost:3000//data.json");
+    const res = await fetch("https://assignment-7-kin-keeper.vercel.app/data.json",{cache:"no-store"});
     const friends = await res.json();
     
     return (

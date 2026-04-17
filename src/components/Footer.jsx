@@ -9,7 +9,7 @@ import twitter from '../assets/twitter.png'
 const Footer = () => {
     return (
         <div className='bg-[#244D3F] pt-20 pb-8'>
-            <div className='text-center'>
+            <div className='text-center w-11/12 mx-auto'>
                 <Image src={LogoFooter} alt='Keen-keeper footer image' className='mx-auto mb-4' />
                 <p className='text-[#FFFFFF]'>Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.</p>
                 <div className='mt-6'>
